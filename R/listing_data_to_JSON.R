@@ -63,6 +63,9 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
                                  short_description = NULL,
                                  amenities = NULL){
   
+  # Add package requirements
+  require(RJSONIO)
+
   
   
   
