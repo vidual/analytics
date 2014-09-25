@@ -5,7 +5,7 @@
 #' @export listing_CSV_to_JSON
 
 listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
-                                 images = NULL
+                                 images = NULL,
                                  property_type = NULL,
                                  property_view = NULL,
                                  architectural_style = NULL,
