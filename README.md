@@ -8,3 +8,7 @@ The goal is to provide useful data processing tools for transforming data, valid
 ## Functions
 
 The `listing_data_to_JSON` function will take data collected from fields, perform validation and QA/QC for the collected data, and produce a JSON file.
+
+## License
+
+Copyright 2014 Vidual. All Rights Reserved. Proprietary and Confidential.
