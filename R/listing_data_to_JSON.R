@@ -33,7 +33,7 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
                                  lon = NULL,
                                  lat = NULL,
                                  short_description = NULL,
-                                 amenities){
+                                 amenities = NULL){
   
   
   
