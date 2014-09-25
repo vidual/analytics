@@ -92,6 +92,7 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
   }
   
   
+  # Create JSON output from data frame by row as arrays
   
   
 }
