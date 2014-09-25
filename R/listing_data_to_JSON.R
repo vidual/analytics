@@ -79,6 +79,18 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
     
   }
   
+  # Determine information about images
+  if (!is.null(images)){
+    number_of_images <- length(images)
+    
+    # Get the sizes of the images
+    
+    # Get the resolution values for each of the images
+    
+    # Get the pixel density for each of the images
+    
+  }
+  
   
   
   
