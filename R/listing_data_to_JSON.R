@@ -66,8 +66,10 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
   # Add package requirements
   require(RJSONIO)
   require(RCurl)
-
   
+  # Validate whether YouTube or Vimeo URL exists
+  if (!is.null(vimeo_youtube_URL)){
+    remote_video_file_exists <- url.exists(vimeo_youtube_URL)
   
   
   
