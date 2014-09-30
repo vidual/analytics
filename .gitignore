@@ -3,3 +3,5 @@
 .RData
 *.RProj
 Vidual_analytics.Rproj
+.Rbuildignore
+JSONout.txt
