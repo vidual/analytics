@@ -67,6 +67,16 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
   require(RJSONIO)
   require(RCurl)
   
+  # Create a data frame with the objects
+  listing_df <- as.data.frame(mat.or.vec(nr = 1, nc = 30))
+  colnames(listing_df) <- c("vimeo_youtube_URL", "images", "property_type", "property_view",
+                            "architectural_style", "sale_or_rent", "rent_period", "listing_price",
+                            "listing_date", "beds", "baths_full", "baths_half", "baths_total",
+                            "neighborhood", "address_1", "address_2", "city", "county", "state_province",
+                            "country", "zip_postal", "mls_num", "lot_size", "square_feet",
+                            "garage_parking_spaces", "year_built", "lon", "lat",
+                            "short_description", "amenities")
+  
   # Validate whether YouTube or Vimeo URL exists
   if (!is.null(vimeo_youtube_URL)){
     remote_video_file_exists <- url.exists(vimeo_youtube_URL)
