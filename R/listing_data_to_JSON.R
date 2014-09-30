@@ -30,7 +30,7 @@
 #' @param lat 
 #' @param short_description 
 #' @param amenities
-#' @export listing_CSV_to_JSON
+#' @export listing_data_to_JSON
 
 listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
                                  images = NULL,
