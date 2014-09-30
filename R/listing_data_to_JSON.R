@@ -81,8 +81,6 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
   if (!is.null(vimeo_youtube_URL)){
     remote_video_file_exists <- url.exists(vimeo_youtube_URL)
     
-    # If the video exists, determine whether it is a YouTube video or a
-    # Vimeo video
     if (remote_video_file_exists == TRUE){
       
     }
