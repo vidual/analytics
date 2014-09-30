@@ -91,6 +91,118 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
     
   }
   
+  if (!is.null(property_type)){
+    property_type <- property_type
+  }
+  
+  if (!is.null(property_view)){ 
+    property_view = property_view
+  }
+  
+  if (!is.null(property_view)){ 
+    architectural_style = architectural_style
+  }
+  
+  if (!is.null(sale_or_rent)){ 
+    sale_or_rent = sale_or_rent
+  }
+  
+  if (!is.null(rent_period)){ 
+    rent_period = rent_period
+  }
+  
+  if (!is.null(listing_price)){ 
+    listing_price = listing_price
+  }
+
+  if (!is.null(listing_date)){ 
+    listing_date = listing_date
+  }
+  
+  if (!is.null(beds)){ 
+    beds = beds
+  }
+  
+  if (!is.null(baths_full)){ 
+    baths_full = baths_full
+  }
+
+  if (!is.null(baths_half)){ 
+    baths_half = baths_half
+  }
+
+  if (!is.null(baths_full) & !is.null(baths_half)){ 
+    baths_total = baths_half + baths_full
+  }
+  
+  if (!is.null(neighborhood)){ 
+    neighborhood = neighborhood
+  }
+
+  if (!is.null(address_1)){ 
+    address_1 = address_1
+  }
+
+  if (!is.null(address_2)){ 
+    address_2 = address_2
+  }
+  
+  if (!is.null(city)){ 
+    city = city
+  }
+  
+  if (!is.null(county)){ 
+    county = county
+  }
+
+  if (!is.null(state_province)){ 
+    state_province = state_province
+  }
+  
+  if (!is.null(country)){ 
+    country = country
+  }
+
+  if (!is.null(zip_postal)){ 
+    zip_postal = zip_postal
+  }
+
+  if (!is.null(mls_num)){ 
+    mls_num = mls_num
+  }
+  
+  if (!is.null(lot_size)){ 
+    lot_size = lot_size
+  }
+
+  if (!is.null(square_feet)){ 
+    square_feet = square_feet
+  }
+  
+  if (!is.null(garage_parking_spaces)){ 
+    garage_parking_spaces = garage_parking_spaces
+  }
+
+  if (!is.null(year_built)){ 
+    year_built = year_built
+  }
+  
+  if (!is.null(lon)){ 
+    lon = lon
+  }
+  
+  if (!is.null(lat)){ 
+    lat = lat
+  }
+  
+  if (!is.null(short_description)){ 
+    short_description = short_description
+  }
+  
+  if (!is.null(amenities)){ 
+    amenities = amenities
+  }
+
   
   # Create JSON output from data frame by row as arrays
   
