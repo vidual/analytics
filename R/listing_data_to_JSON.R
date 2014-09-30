@@ -82,6 +82,7 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
     remote_video_file_exists <- url.exists(vimeo_youtube_URL)
     
     if (remote_video_file_exists == TRUE){
+      listing_df[1,1] <- vimeo_youtube_URL
       
     }
     
@@ -100,115 +101,115 @@ listing_data_to_JSON <- function(vimeo_youtube_URL = NULL,
   }
   
   if (!is.null(property_type)){
-    property_type <- property_type
+    listing_df[1,3] <- property_type
   }
   
   if (!is.null(property_view)){ 
-    property_view = property_view
+    listing_df[1,4] <- property_view
   }
   
   if (!is.null(property_view)){ 
-    architectural_style = architectural_style
+    listing_df[1,5] <- architectural_style
   }
   
   if (!is.null(sale_or_rent)){ 
-    sale_or_rent = sale_or_rent
+    listing_df[1,6] <- sale_or_rent
   }
   
   if (!is.null(rent_period)){ 
-    rent_period = rent_period
+    listing_df[1,7] <- rent_period
   }
   
   if (!is.null(listing_price)){ 
-    listing_price = listing_price
+    listing_df[1,8] <- listing_price
   }
 
   if (!is.null(listing_date)){ 
-    listing_date = listing_date
+    listing_df[1,9] <- listing_date
   }
   
   if (!is.null(beds)){ 
-    beds = beds
+    listing_df[1,10] <- beds
   }
   
   if (!is.null(baths_full)){ 
-    baths_full = baths_full
+    listing_df[1,11] <- baths_full
   }
 
   if (!is.null(baths_half)){ 
-    baths_half = baths_half
+    listing_df[1,12] <- baths_half
   }
 
   if (!is.null(baths_full) & !is.null(baths_half)){ 
-    baths_total = baths_half + baths_full
+    listing_df[1,13] <- baths_half + baths_full
   }
   
   if (!is.null(neighborhood)){ 
-    neighborhood = neighborhood
+    listing_df[1,14] <- neighborhood
   }
 
   if (!is.null(address_1)){ 
-    address_1 = address_1
+    listing_df[1,15] <- address_1
   }
 
   if (!is.null(address_2)){ 
-    address_2 = address_2
+    listing_df[1,16] <- address_2
   }
   
   if (!is.null(city)){ 
-    city = city
+    listing_df[1,17] <- city
   }
   
   if (!is.null(county)){ 
-    county = county
+    listing_df[1,18] <- county
   }
 
   if (!is.null(state_province)){ 
-    state_province = state_province
+    listing_df[1,19] <- state_province
   }
   
   if (!is.null(country)){ 
-    country = country
+    listing_df[1,20] <- country
   }
 
   if (!is.null(zip_postal)){ 
-    zip_postal = zip_postal
+    listing_df[1,21] <- zip_postal
   }
 
   if (!is.null(mls_num)){ 
-    mls_num = mls_num
+    listing_df[1,22] <- mls_num
   }
   
   if (!is.null(lot_size)){ 
-    lot_size = lot_size
+    listing_df[1,23] <- lot_size
   }
 
   if (!is.null(square_feet)){ 
-    square_feet = square_feet
+    listing_df[1,24] <- square_feet
   }
   
   if (!is.null(garage_parking_spaces)){ 
-    garage_parking_spaces = garage_parking_spaces
+    listing_df[1,25] <- garage_parking_spaces
   }
 
   if (!is.null(year_built)){ 
-    year_built = year_built
+    listing_df[1,26] <- year_built
   }
   
   if (!is.null(lon)){ 
-    lon = lon
+    listing_df[1,27] <- lon
   }
   
   if (!is.null(lat)){ 
-    lat = lat
+    listing_df[1,28] <- lat
   }
   
   if (!is.null(short_description)){ 
-    short_description = short_description
+    listing_df[1,29] <- short_description
   }
   
   if (!is.null(amenities)){ 
-    amenities = amenities
+    listing_df[1,30] <- amenities
   }
 
   
