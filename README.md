@@ -1,4 +1,4 @@
-Vidual_analytics
+Vidual Analytics
 ----------------
 
 The Vidual_analytics package will provide data analysis functions for the structured and semi-structured data that will be collected from the Vidual website. As it is built as a package, it can be loaded into an R session or called from RScript in a bash script.
